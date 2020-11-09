@@ -156,6 +156,15 @@ p {
 	width: 800px;
 	margin: 0 auto;
 }
+.top-about {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px dashed black;
+	padding: 20px;
+}
 
 .top-content {
 	display: flex;
@@ -166,7 +175,7 @@ p {
 }
 
 .top-content .text-container {
-	width: 48%;
+	width: 50%;
 	padding: 0 1%;
 	padding-bottom: 20px;
 	padding-top: 20px;
@@ -198,6 +207,9 @@ p {
 	align-items: center;
 	justify-content: center;
 }
+.boxes {
+	flex-flow: row-reverse;
+}
 .box1 {
 	width: 12.5%;
 	height: 100px;
@@ -207,6 +219,10 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-basis: auto;
+}
+.box1:hover {
+	background-color: red;
 }
 
 .box2 {
@@ -307,12 +323,28 @@ p {
 	justify-content: space-around;
 }
 
-.bottom-content .text-container {
+.bottom-content .text-container h2 {
 	padding-right: 4%;
 }
 
 .bottom-content .text-container:last-child {
 	padding-right: 0;
+}
+
+.bottom-text {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 20px;
+}
+
+button {
+	background-color: white;
+	padding: 2% 5%;
+	border-radius: 10px;
+	margin: 10px auto;
 }
 
 footer {
